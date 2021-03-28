@@ -1,0 +1,61 @@
+{
+  "name": "black",
+  "version": "1.0.0",
+  "private": false,
+  "homepage": "https://black.moquette.us",
+  "license": "MIT",
+  "dependencies": {
+    "@craco/craco": "^6.1.1",
+    "@glidejs/glide": "^3.4.1",
+    "@popperjs/core": "^2.9.1",
+    "@testing-library/jest-dom": "^5.11.10",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^13.0.16",
+    "aos": "^2.3.4",
+    "bootstrap": "^5.0.0-beta3",
+    "bootstrap-icons": "^1.4.0",
+    "gh-pages": "^3.1.0",
+    "node-sass": "^5.0.0",
+    "prettier": "^2.2.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "smoothscroll-polyfill": "^0.4.4",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "craco start",
+    "deploy": "gh-pages -d build",
+    "build": "craco build",
+    "predeploy": "yarn run build",
+    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
+    "lint:fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx}'",
+    "prettier": "prettier --write 'src/**/*.{js,jsx,ts,tsx,json,css,scss,md}'",
+    "postbuild": "purgecss --css build/static/css/*.css --content build/index.html build/static/js/*.js --output build/static/css",
+    "test": "craco test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.3",
+    "craco-sass-resources-loader": "^1.1.0",
+    "craco-style-resources-loader": "^1.0.1"
+  }
+}
