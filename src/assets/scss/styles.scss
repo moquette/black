@@ -2,38 +2,38 @@
 # Variables
 -------------------------------------------------------------- */
 :root {
-  --header-height: 60px;
+  --header-height: 78px;
   --black: #000;
 }
 
 /* --------------------------------------------------------------
 # Vendors
 -------------------------------------------------------------- */
-@import "~bootstrap/scss/bootstrap";
-@import "~bootstrap-icons/font/bootstrap-icons";
-@import "~@glidejs/glide/src/assets/sass/glide.core";
-@import "~@glidejs/glide/src/assets/sass/glide.theme";
-@import "~aos/dist/aos.css";
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap-icons/font/bootstrap-icons';
+@import '~@glidejs/glide/src/assets/sass/glide.core';
+@import '~@glidejs/glide/src/assets/sass/glide.theme';
+@import '~aos/dist/aos.css';
 
 /* --------------------------------------------------------------
 # Base
 -------------------------------------------------------------- */
-@import "./components/base";
+@import './components/base';
 
 /* --------------------------------------------------------------
 # Components
 -------------------------------------------------------------- */
-@import "./components/header";
-@import "./components/hero";
-@import "./components/cta";
-@import "./components/clients";
-@import "./components/testimonials";
-@import "./components/footer";
-@import "./components/top";
-@import "./components/glide";
-@import "./components/preloader";
+@import './components/header';
+@import './components/hero';
+@import './components/cta';
+@import './components/clients';
+@import './components/testimonials';
+@import './components/footer';
+@import './components/top';
+@import './components/glide';
+@import './components/preloader';
 
 /* --------------------------------------------------------------
 # Custom
 -------------------------------------------------------------- */
-@import "./custom.scss";
+@import './custom.scss';
