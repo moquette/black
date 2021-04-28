@@ -43,13 +43,11 @@
     background-color: #fff;
     padding: 70px 30px 30px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    &.show {
-      padding-left: 0;
-      padding-right: 0;
-      height: 100%;
-      right: 0;
-      transition: right 400ms ease-in-out;
-    }
+    padding-left: 0;
+    padding-right: 0;
+    height: 100%;
+    right: 0;
+    transition: right 400ms ease-in-out;
     a {
       text-align: center;
       &.active {
