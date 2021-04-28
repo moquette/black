@@ -1,9 +1,9 @@
-import logo from "../logo.svg";
+import logo from '../logo.svg';
 const currentYear = new Date().getFullYear();
 export const Footer = (props) => {
   const data = props.data.footer;
   return (
-    <footer id={data.id} className={data.id + " " + data.classes}>
+    <footer id={data.id} className={data.id + ' ' + data.classes}>
       <p>
         &copy;{currentYear} {props.data.company.name}. All rights reserved
         <br />

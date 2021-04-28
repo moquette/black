@@ -1,7 +1,7 @@
-import { render, screen } from "@testing-library/react";
-import App from "./App";
+import { render, screen } from '@testing-library/react';
+import App from './App';
 
-test("renders about link", () => {
+test('renders about link', () => {
   render(<App />);
   const linkElement = screen.getByText(/Top/i);
   expect(linkElement).toBeInTheDocument();

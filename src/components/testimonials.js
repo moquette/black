@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
-import Glide from "@glidejs/glide";
+import React, { useEffect } from 'react';
+import Glide from '@glidejs/glide';
 export const Testimonials = (props) => {
   const data = props.data.testimonials;
   useEffect(() => {
-    new Glide(".glide", {
-      type: "carousel",
+    new Glide('.glide', {
+      type: 'carousel',
       perView: 2,
       autoplay: 6000,
       breakpoints: {
@@ -18,7 +18,7 @@ export const Testimonials = (props) => {
     }).mount();
   });
   return (
-    <section id={data.id} className={data.id + " " + data.classes}>
+    <section id={data.id} className={data.id + ' ' + data.classes}>
       <div className="container">
         <h2 className="section-title">{data.title}</h2>
 

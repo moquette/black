@@ -1,7 +1,7 @@
 export const Portfolio = (props) => {
   const data = props.data.portfolio;
   return (
-    <section id={data.id} className={data.id + " " + data.classes}>
+    <section id={data.id} className={data.id + ' ' + data.classes}>
       <div className="container">
         <h2 className="section-title">{data.title}</h2>
         <div className="row row-cols-1 row-cols-xl-4 row-cols-md-2 row-cols-sm-2 g-3 pt-3">

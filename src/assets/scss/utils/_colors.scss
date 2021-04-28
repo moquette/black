@@ -6,13 +6,13 @@ $colors: (/* lightgrey: #EBEDEE */);
 // =============================================================================
 
 @each $name, $hex in $colors {
-  .has-background-#{"" + $name} {
+  .has-background-#{'' + $name} {
     background-color: $hex;
   }
-  .has-text-#{"" + $name} {
+  .has-text-#{'' + $name} {
     color: $hex;
   }
-  .has-text-#{"" + $name}-hover {
+  .has-text-#{'' + $name}-hover {
     &:hover {
       color: $hex;
     }

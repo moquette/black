@@ -1,9 +1,9 @@
-import React from "react";
-import { Header } from "../components/header";
-import { Footer } from "../components/footer";
-import { Top } from "../components/top";
-import { Preloader } from "../components/preloader";
-import "./MainLayout.module.scss";
+import React from 'react';
+import { Header } from '../components/header';
+import { Footer } from '../components/footer';
+import { Top } from '../components/top';
+import { Preloader } from '../components/preloader';
+import './MainLayout.module.scss';
 
 const MainLayout = (props) => {
   const data = props.data;

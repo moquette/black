@@ -1,7 +1,7 @@
 export const Hero = (props) => {
   const data = props.data.hero;
   return (
-    <section id={data.id} className={data.id + " " + data.classes}>
+    <section id={data.id} className={data.id + ' ' + data.classes}>
       <div className="container">
         <div className="row">
           <div className="col-8">

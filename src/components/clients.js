@@ -1,7 +1,7 @@
 export const Clients = (props) => {
   const data = props.data.clients;
   return (
-    <section id={data.id} className={data.id + " " + data.classes}>
+    <section id={data.id} className={data.id + ' ' + data.classes}>
       <div className="container" data-aos="zoom-in">
         <div className="row d-flex align-items-center">
           {data.client.map((d, i) => (
