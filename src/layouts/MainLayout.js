@@ -1,9 +1,9 @@
-import React from "react";
-import { Header } from "../components/header";
-import { Footer } from "../components/footer";
-import { Top } from "../components/top";
-import { Preloader } from "../components/preloader";
-import "./MainLayout.module.scss";
+import React from 'react';
+import { Header } from '../components/header';
+import { Footer } from '../components/footer';
+import { Top } from '../components/top';
+import { Preloader } from '../components/preloader';
+import './MainLayout.module.scss';
 
 const MainLayout = (props) => {
   const data = props.data;
@@ -17,12 +17,7 @@ const MainLayout = (props) => {
         <Header data={data} />
       </header>
       <main>{props.children}</main>
-      <footer
-        id={data.footer.id}
-        className={`${data.footer.id} ${data.footer.classes}`}
-      >
-        <Footer data={data} />
-      </footer>
+      <Footer data={data} />
       <Top />
       <Preloader />
     </>

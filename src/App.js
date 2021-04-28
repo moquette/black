@@ -1,24 +1,24 @@
-import bootstrap from "bootstrap/dist/js/bootstrap.min.js";
-import smoothscroll from "smoothscroll-polyfill";
-import AOS from "aos";
-import React, { Component } from "react";
-import JsonData from "./data/data.json";
-import MainLayout from "./layouts/MainLayout";
-import { Hero } from "./components/hero";
-import { Features } from "./components/features";
-import { Cta } from "./components/cta";
-import { Clients } from "./components/clients";
-import { About } from "./components/about";
-import { Services } from "./components/services";
-import { Portfolio } from "./components/portfolio";
-import { Testimonials } from "./components/testimonials";
-import { Team } from "./components/team";
-import { Contact } from "./components/contact";
-import "./assets/scss/styles.scss";
+import bootstrap from 'bootstrap/dist/js/bootstrap.min.js';
+import smoothscroll from 'smoothscroll-polyfill';
+import AOS from 'aos';
+import React, { Component } from 'react';
+import JsonData from './data/data.json';
+import MainLayout from './layouts/MainLayout';
+import { Hero } from './components/hero';
+import { Features } from './components/features';
+import { Cta } from './components/cta';
+import { Clients } from './components/clients';
+import { About } from './components/about';
+import { Services } from './components/services';
+import { Portfolio } from './components/portfolio';
+import { Testimonials } from './components/testimonials';
+import { Team } from './components/team';
+import { Contact } from './components/contact';
+import './assets/scss/styles.scss';
 
 AOS.init({
   duration: 1000,
-  easing: "ease-in-out",
+  easing: 'ease-in-out',
   once: true,
   mirror: false,
 });
@@ -32,7 +32,7 @@ class App extends Component {
   }
 
   init() {
-    const navbar = document.getElementById("navbarCollapse");
+    const navbar = document.getElementById('navbarCollapse');
     const bsCollapse = new bootstrap.Collapse(navbar, {
       toggle: false,
     });
@@ -66,13 +66,13 @@ class App extends Component {
      * Easy on scroll event listener
      */
     const onscroll = (el, listener) => {
-      el.addEventListener("scroll", listener);
+      el.addEventListener('scroll', listener);
     };
 
     /**
      * Navbar links active state on scroll
      */
-    const navbarlinks = select("#navbar .scrollto", true);
+    const navbarlinks = select('#navbar .scrollto', true);
     const navbarlinksActive = () => {
       const position = window.scrollY;
       navbarlinks.forEach((navbarlink) => {
@@ -83,13 +83,13 @@ class App extends Component {
           position >= section.offsetTop &&
           position <= section.offsetTop + section.offsetHeight - 2
         ) {
-          navbarlink.classList.add("active");
+          navbarlink.classList.add('active');
         } else {
-          navbarlink.classList.remove("active");
+          navbarlink.classList.remove('active');
         }
       });
     };
-    window.addEventListener("load", navbarlinksActive);
+    window.addEventListener('load', navbarlinksActive);
     onscroll(document, navbarlinksActive);
 
     /**
@@ -99,23 +99,23 @@ class App extends Component {
       const elementPos = select(el).offsetTop;
       window.scrollTo({
         top: elementPos,
-        behavior: "smooth",
+        behavior: 'smooth',
       });
     };
 
     /**
      * Back to top button
      */
-    const backtotop = select(".back-to-top");
+    const backtotop = select('.back-to-top');
     if (backtotop) {
       const toggleBacktotop = () => {
         if (window.scrollY > 100) {
-          backtotop.classList.add("active");
+          backtotop.classList.add('active');
         } else {
-          backtotop.classList.remove("active");
+          backtotop.classList.remove('active');
         }
       };
-      window.addEventListener("load", toggleBacktotop);
+      window.addEventListener('load', toggleBacktotop);
       onscroll(document, toggleBacktotop);
     }
 
@@ -123,8 +123,8 @@ class App extends Component {
      * Scroll with ofset on links with a class name .scrollto
      */
     on(
-      "click",
-      ".scrollto",
+      'click',
+      '.scrollto',
       function (e) {
         if (select(this.hash)) {
           e.preventDefault();
@@ -136,8 +136,8 @@ class App extends Component {
     );
 
     on(
-      "click",
-      ".top",
+      'click',
+      '.top',
       function (e) {
         if (select(this.hash)) {
           e.preventDefault();
@@ -147,8 +147,8 @@ class App extends Component {
       true
     );
     on(
-      "click",
-      "body",
+      'click',
+      'body',
       function (e) {
         e.preventDefault();
         bsCollapse.hide();
@@ -159,7 +159,7 @@ class App extends Component {
     /**
      * Scroll with ofset on page load with hash links in the url
      */
-    window.addEventListener("load", () => {
+    window.addEventListener('load', () => {
       if (window.location.hash) {
         if (select(window.location.hash)) {
           scrollto(window.location.hash);
@@ -170,7 +170,7 @@ class App extends Component {
     /**
      * Preloader
      */
-    setTimeout(() => document.getElementById("preloader").remove(), 1000);
+    setTimeout(() => document.getElementById('preloader').remove(), 1000);
   }
 
   componentDidMount() {
