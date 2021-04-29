@@ -12,31 +12,21 @@ export const Contact = (props) => {
               method="post"
               data-aos="fade-up"
             >
-              <div className="row">
-                <div className="col-md-6 form-group">
-                  <input
-                    className="form-control"
-                    id="name"
-                    name="name"
-                    placeholder="Your Name"
-                  />
-                </div>
-                <div className="col-md-6 form-group mt-3 mt-md-0">
-                  <input
-                    className="form-control"
-                    id="email"
-                    type="email"
-                    name="email"
-                    placeholder="Your Email"
-                  />
-                </div>
+              <div className="form-group mt-3">
+                <input
+                  className="form-control"
+                  id="name"
+                  name="name"
+                  placeholder="Your Name"
+                />
               </div>
               <div className="form-group mt-3">
                 <input
                   className="form-control"
-                  id="subject"
-                  name="subject"
-                  placeholder="Subject"
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
                 />
               </div>
               <div className="form-group mt-3">
@@ -48,7 +38,7 @@ export const Contact = (props) => {
                 ></textarea>
               </div>
               <div className="form-group mt-3 float-end">
-                <button className="btn btn-dark" type="submit" disabled>
+                <button className="btn btn-dark" type="submit">
                   Send Message
                 </button>
               </div>
