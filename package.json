@@ -5,22 +5,22 @@
   "homepage": "https://black.moquette.us",
   "license": "MIT",
   "dependencies": {
-    "@craco/craco": "^6.1.2",
+    "@craco/craco": "^6.2.0",
     "@glidejs/glide": "^3.4.1",
-    "@popperjs/core": "^2.9.2",
+    "@popperjs/core": "^2.9.3",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
-    "@testing-library/user-event": "^13.1.9",
+    "@testing-library/user-event": "^13.2.1",
     "aos": "^2.3.4",
-    "bootstrap": "^5.0.2",
+    "bootstrap": "^5.1.0",
     "bootstrap-icons": "^1.5.0",
     "prettier": "^2.3.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
-    "sass": "^1.35.1",
+    "sass": "^1.37.5",
     "smoothscroll-polyfill": "^0.4.4",
-    "web-vitals": "^2.0.1"
+    "web-vitals": "^2.1.0"
   },
   "scripts": {
     "start": "craco start",
